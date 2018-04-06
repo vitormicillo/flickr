@@ -1,0 +1,80 @@
+html, body,
+#all {
+
+	background-color: #000000;
+	min-height: 100%;
+	min-width: 100%;
+	position: relative;
+	padding: 0px;
+	display: table;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+
+}
+
+.row {
+
+	position: relative;
+	display: table;
+	height: 25%;
+	width: 100%;
+
+}
+
+.item {
+
+	max-width: 25%;
+	height: 100%;
+	width: 100%;
+	float: left;
+
+}
+
+
+.item > a {
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: table;
+	height: 100%;
+	width: 100%;
+
+}
+
+.item > a > div {
+	background-color: #000000;
+	position: relative;
+	display: table;
+    opacity: 0.8;
+    -webkit-transition: background-color 2s, opacity 2s;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+	height: 100%;
+	width: 100%;
+}
+
+
+.item > a > div:hover {
+    background-image: url('fighter-jet.svg');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center;
+    background-color: transparent;
+    opacity: 1.0;
+    filter: alpha(opacity=10); /* For IE8 and earlier */
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.row { height: 50%; }
+	.item { max-width: 50%; }
+}
+
+
+@media screen and (max-width: 600px) {
+	.row { height: 50%; }
+	.item { max-width: 100%; }
+}
