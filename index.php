@@ -8,17 +8,13 @@
 	<head>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title><?= $flickr->title; ?></title>
+		<title>Flickr Gallery</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<body>
 		<div id="all">
 			<?php
-			
-				//echo '<pre>';
-				//print_r($flickr->items);
-				
 				$a = 1;
 				for ($i = 0; $i < $display; $i++):
 
@@ -33,7 +29,6 @@
 							echo '</a>';
 						echo '</div>';
 						
-						
 						if($a == 4) { echo '</div>'; $a = 0; }
 						$a++;
 
@@ -43,7 +38,6 @@
 				if($a <= 3) { echo '</div>'; }
 			?>
 		</div>
-
 	</body>
 
 </html>

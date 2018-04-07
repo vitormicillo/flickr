@@ -1,6 +1,5 @@
 html, body,
 #all {
-
 	background-color: #000000;
 	min-height: 100%;
 	min-width: 100%;
@@ -10,30 +9,24 @@ html, body,
 	margin: 0px;
 	height: 100%;
 	width: 100%;
-
 }
 
 .row {
-
 	position: relative;
 	display: table;
 	height: 25%;
 	width: 100%;
-
 }
 
 .item {
-
 	max-width: 25%;
 	height: 100%;
 	width: 100%;
 	float: left;
-
 }
 
 
 .item > a {
-
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -41,7 +34,6 @@ html, body,
 	display: table;
 	height: 100%;
 	width: 100%;
-
 }
 
 
@@ -57,7 +49,7 @@ html, body,
 }
 
 .item > a > p {
-position: absolute;
+	position: absolute;
     background: #795548;
     width: 95%;
     height: auto;
@@ -79,13 +71,10 @@ position: absolute;
     filter: alpha(opacity=10); /* For IE8 and earlier */
 }
 
-
-
 @media screen and (max-width: 800px) {
 	.row { height: 50%; }
 	.item { max-width: 50%; }
 }
-
 
 @media screen and (max-width: 600px) {
 	.row { height: 50%; }

@@ -5,7 +5,11 @@
 	error_reporting(E_ALL);
 
 
-	//$id		= '53358497@N04'; // Flickr ID at http://idgettr.com in case you want to use the id of a user you can use the api below
+	/*
+	* in case you want to use the id of a user you can use the api below
+	*/
+	
+	//$id		= '53358497@N04'; // Flickr ID at http://idgettr.com 
 	//$url	= 'https://api.flickr.com/services/feeds/photos_public.gne?id='.$id.'&format=json&tags=chamonix,ski,snow';
 	
 	$url	= 'https://api.flickr.com/services/feeds/photos_public.gne?format=json&tags=chamonix,ski,snow';
@@ -19,4 +23,4 @@
 	// Remove jsonp callback (jsonFlickrFeed) and escaped characters (except ")
 	$json		= preg_replace('/\\\([^"])/', '$1', substr($response, 15, -1));
 	$flickr		= json_decode($json);
-	$display	= 20; //Numbers pictures to show
+	$display	= 20; //Number pictures to show
