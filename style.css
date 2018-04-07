@@ -44,6 +44,7 @@ html, body,
 
 }
 
+
 .item > a > div {
 	background-color: #000000;
 	position: relative;
@@ -55,9 +56,21 @@ html, body,
 	width: 100%;
 }
 
+.item > a > p {
+position: absolute;
+    background: #795548;
+    width: 95%;
+    height: auto;
+    bottom: 0;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    color: #FFF;
+    font-size: x-small;
+    font-family: verdana;
+}
 
 .item > a > div:hover {
-    background-image: url('fighter-jet.svg');
+    background-image: url('fb.svg');
     background-repeat: no-repeat;
     background-size: 50px 50px;
     background-position: center;

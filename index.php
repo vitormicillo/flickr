@@ -11,12 +11,14 @@
 		<title><?= $flickr->title; ?></title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
+
 	<body>
-
 		<div id="all">
-
 			<?php
-
+			
+				//echo '<pre>';
+				//print_r($flickr->items);
+				
 				$a = 1;
 				for ($i = 0; $i < $display; $i++):
 
@@ -24,14 +26,13 @@
 					if($photo->media->m != ''):
 						if ($a == 1) { echo '<div class="row">'; }
 						
-						//echo '<pre>';
-						//print_r($photo);
-						
 						echo '<div class="item">';
 							echo '<a href="' . $photo->link . '" style="background-image: url(\'' . $photo->media->m  . '\');" target="_blank">';
-							echo '<div>&nbsp;</div>';
+								echo '<p>'.$photo->title.' by '.$photo->author.'</p>';
+								echo '<div>&nbsp;</div>';
 							echo '</a>';
 						echo '</div>';
+						
 						
 						if($a == 4) { echo '</div>'; $a = 0; }
 						$a++;
@@ -40,9 +41,7 @@
 
 				endfor;
 				if($a <= 3) { echo '</div>'; }
-
 			?>
-
 		</div>
 
 	</body>
